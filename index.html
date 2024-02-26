@@ -12,7 +12,7 @@
             <h1>Selecione a função do sistema:</h1>
 
             <select id="opcoes" onchange="main()">
-                <option value>Selecione...</option>
+                <option value="">Selecione...</option>
                 <option value="op1">Vogal ou Consoante</option>
                 <option value="op2">Média do Aluno</option>
                 <option value="op3">Maior Número</option>
@@ -27,7 +27,7 @@
                 <option value="op12">Triangulo</option>
                 <option value="op13">Equacao de Segundo Grau</option>
                 <option value="op14">Ano Bissexto</option>
-                <option value="op15">Format Data</option>
+                <option value="op15">Formatar Data</option>
                 <option value="op16">Par ou ímpar</option>
                 <option value="op17">Quantidade de centenas</option>
                 <option value="op18">Saque e Notas</option>
@@ -39,7 +39,7 @@
                 <option value="op24">Carne</option>
             </select>
 
-            <form action="#">
+            <form id="formulario" style="display: none;" action="#">
                 <p id="enunciado"></p>
                 <div class="input-group">
                     <label for="nome">Nome:</label>

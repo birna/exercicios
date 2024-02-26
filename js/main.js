@@ -82,40 +82,81 @@ function alteraEnunciado(opcaoSelecionada) {
             + "<br>Triângulo Escaleno: três lados diferentes;"
             break;
         case "op13":
-            enunciado = "Conteúdo da Opção 1";
+            enunciado = "Faça um script que calcule as raízes de uma equação do segundo grau, na forma ax² + bx + c. O script deverá pedir os valores de a, b e c e fazer os testes necessários.";
             break;
         case "op14":
-            enunciado = "Conteúdo da Opção 2";
+            enunciado = "Faça um script que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto.";
             break;
         case "op15":
-            enunciado = "Conteúdo da Opção 3";
+            enunciado = "Faça um script que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.";
             break;
         case "op16":
-            enunciado = "Conteúdo da Opção 3";
+            enunciado = "Faça um script que peça um número inteiro e determine se ele é par ou ímpar."
+            + " Dica: utilize o operador módulo (resto da divisão): %"
             break;
         case "op17":
-            enunciado = "Conteúdo da Opção 3";
+            enunciado = "Faça um script que leia um número inteiro menor que 1000 e imprima a quantidade de centenas, dezenas e unidades do mesmo."
+            +" Observando os termos no plural a colocação do 'e', da vírgula entre outros. Exemplo:"
+            +"<br>326 = 3 centenas, 2 dezenas e 6 unidades"
+            +"<br>12 = 1 dezena e 2 unidades"
+            +"<br>Testar com: 326, 300, 100, 320, 310,305, 301, 101, 311, 111, 25, 20, 10, 21, 11, 1, 7 e 16"
             break;
         case "op18":
-            enunciado = "Conteúdo da Opção 3";
+            enunciado = "Faça um script para um caixa eletrônico. O script deverá perguntar ao usuário a valor do saque e depois informar quantas notas de cada valor serão fornecidas." 
+            +"<br>As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é de 10 reais e o máximo de 600 reais. O script não deve se preocupar com a quantidade de"
+            +" notas existentes na máquina."
+            +"<br>Exemplo: Para sacar a quantia de 256 reais, o script fornece duas notas de 100, uma nota de 50, uma nota de 5 e uma nota de 1"
+            +"<br>Exemplo: Para sacar a quantia de 399 reais, o script fornece três notas de 100, uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1."
             break;                    
         case "op19":
-            enunciado = "Conteúdo da Opção 3";
+            enunciado = "Faça um script que peça um número e informe se o número é inteiro ou decimal. Dica: utilize uma função de arredondamento.";
             break;   
         case "op20":
-            enunciado = "Conteúdo da Opção 3";
+            enunciado = "Faça um script que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar. O resultado da operação deve ser acompanhado de uma frase que diga se o número é:"
+            +"<br>par ou ímpar"
+            +"<br>positivo ou negativo"
+            +"<br>inteiro ou decimal."
             break;   
         case "op21":
-            enunciado = "Conteúdo da Opção 1";
-            break;
+            enunciado = "Faça um script que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:"
+            +"<br><br>Telefonou para a vítima?"
+            +"<br>Esteve no local do crime?"
+            +"<br>Mora perto da vítima?"
+            +"<br>Devia para a vítima?"
+            +"<br>Já trabalhou com a vítima?" 
+            +"<br><br>O script deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2"
+            +" questões ela deve ser classificada como 'Suspeita', entre 3 e 4 como 'Cúmplice' e 5 como 'Assassino'. Caso contrário, ele será classificado como 'Inocente'."
+            break
         case "op22":
-            enunciado = "Conteúdo da Opção 2";
+            enunciado = "Um posto está vendendo combustíveis com a seguinte tabela de descontos:"
+            +"<br><br>Álcool:"
+            +"<br>até 20 litros, desconto de 3% por litro"
+            +"<br>acima de 20 litros, desconto de 5% por litro"
+            +"<br><br>Gasolina:"
+            +"<br>até 20 litros, desconto de 4% por litro"
+            +"<br>acima de 20 litros, desconto de 6% por litro"
+            +"<br><br>Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível"
+            +" (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 2,50 o preço do litro do"
+            +" álcool é R$ 1,90."
             break;
         case "op23":
-            enunciado = "Conteúdo da Opção 3";
+            enunciado = "Uma fruteira está vendendo frutas com a seguinte tabela de preços:"
+            +"<br><br>--------------------- Até 5 Kg --------------- Acima de 5 Kg"
+            +"<br>Morango -------- R$ 2,50 por Kg ------- R$ 2,20 por Kg"
+            +"<br>Maçã ----------- R$ 1,80 por Kg ------- R$ 1,50 por Kg"
+            +"<br><br>Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00, receberá ainda um desconto de 10% sobre este total."
+            +"<br>Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente."
             break;
         case "op24":
-            enunciado = "Conteúdo da Opção 3";
+            enunciado = "O Hipermercado Tabajara está com uma promoção de carnes que é imperdível. Confira:"
+            +"<br><br>---------------------- Até 5 Kg ---------------- Acima de 5 Kg"
+            +"<br>File Duplo ----- R$ 4,90 por Kg ---------- R$ 5,80 por Kg"
+            +"<br>Alcatra -------- R$ 5,90 por Kg ---------- R$ 6,80 por Kg"
+            +"<br>Picanha -------- R$ 6,90 por Kg ---------- R$ 7,80 por Kg"
+            +"<br><br>Para atender a todos os clientes, cada cliente poderá levar apenas um dos tipos de carne da promoção, porém não há limites para a quantidade de carne por cliente."
+            +" Se compra for feita no cartão Tabajara o cliente receberá ainda um desconto de 5% sobre o total a compra. Escreva um script que peça o tipo e a quantidade de"
+            +"carne comprada pelo usuário e gere um cupom fiscal, contendo as informações da compra: tipo e quantidade de carne, preço total, tipo de pagamento, valor do desconto e"
+            +"valor a pagar."
             break;
         default:
             enunciado = "";
@@ -124,8 +165,19 @@ function alteraEnunciado(opcaoSelecionada) {
     return enunciado;
 }
 
+function form(opcaoSelecionada) {
+    const form = document.getElementById("formulario");
+    if (opcaoSelecionada === "") {
+        form.style.display = "none";
+    } else {
+        form.style.display = "block";
+    }
+}
+
+
 function main() {
     const conteudo = document.getElementById("enunciado");
     const opcoes = document.getElementById("opcoes");
     conteudo.innerHTML = alteraEnunciado(opcoes.value);
+    form(opcoes.value)
 }
