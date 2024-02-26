@@ -5,9 +5,7 @@
     A mensagem "Reprovado", se a média for menor do que sete;
     A mensagem "Aprovado com Distinção", se a média for igual a dez.
 
-
 3. Faça um script que leia três números inteiros e mostre o maior deles.
-
 
 4. Faça um script que pede dois inteiros e armazene eles em duas variáveis. Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert.
 
@@ -85,7 +83,6 @@ Dica: utilize o operador módulo (resto da divisão): %
 
 17. Faça um script que leia um número inteiro menor que 1000 e imprima a quantidade de centenas, dezenas e unidades do mesmo.
 Observando os termos no plural a colocação do "e", da vírgula entre outros. Exemplo:
-
 
 326 = 3 centenas, 2 dezenas e 6 unidades
 12 = 1 dezena e 2 unidades Testar com: 326, 300, 100, 320, 310,305, 301, 101, 311, 111, 25, 20, 10, 21, 11, 1, 7 e 16
