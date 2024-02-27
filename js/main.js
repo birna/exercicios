@@ -165,65 +165,248 @@ function alteraEnunciado(opcaoSelecionada) {
     return enunciado;
 }
 
-function inputGenerate(opcaoSelecionada) {
 
+function inputGenerate(opcaoSelecionada) {
+    const label1 = document.getElementById("label1");
+    const input1 = document.getElementById("input1");
+    label1.style.display = "none";
+    label1.textContent = "";
+    input1.style.display = "none";
+    input1.value = "";
+
+    const label2 = document.getElementById("label2");
+    const input2 = document.getElementById("input2");
+    label2.style.display = "none";
+    label2.textContent = "";
+    input2.style.display = "none";
+    input2.value = "";
+
+    const label3 = document.getElementById("label3");
+    const input3 = document.getElementById("input3");
+    label3.style.display = "none";
+    label3.textContent = "";
+    input3.style.display = "none";
+    input3.value = "";
+
+    const label4 = document.getElementById("label4");
+    const input4 = document.getElementById("input4");
+    label4.style.display = "none";
+    label4.textContent = "";
+    input4.style.display = "none";
+    input4.value = "";
+
+    const label5 = document.getElementById("label5");
+    const input5 = document.getElementById("input5");
+    label5.style.display = "none";
+    label5.textContent = "";
+    input5.style.display = "none";
+    input5.value = "";
 
     switch (opcaoSelecionada) {
         case "op1":
+            label1.textContent = "Digite uma letra:"
+            label1.style.display = "block";    
+            
+            input1.maxLength = 1;
+            input1.type = "text"
+            input1.style.display = "block";
+            
             break;
         case "op2":
+            label1.textContent = "Nota 1:"
+            label1.style.display = "block";
+            input1.type = "number";
+            input1.min = 0;
+            input1.max = 10;
+            input1.step = 0.25;
+            input1.style.display = "block";
+            
+            label2.textContent = "Nota 2:"
+            label2.style.display = "block";
+            input2.type = "number";
+            input2.min = 0;
+            input2.max = 10;
+            input2.step = 0.25;
+            input2.style.display = "block";
             break;
         case "op3":
+            label1.textContent = "Primeiro Numero: ";
+            label1.style.display = "block";
+            input1.type = "number";
+            input1.step = 1;
+            input1.pattern="^-?[0-9]+$"
+            input1.style.display = "block";
+            
+            label2.textContent = "Segundo Numero: ";
+            label2.style.display = "block";
+            input2.type = "number";
+            input2.step = 1;
+            input2.pattern="^-?[0-9]+$"
+            input2.style.display = "block";
+            
+            label3.textContent = "Terceiro Numero: ";
+            label3.style.display = "block";
+            input3.type = "number";
+            input3.step = 1;
+            input3.pattern="^-?[0-9]+$"
+            input3.style.display = "block";
             break;
         case "op4":
+            label1.textContent = "Primeiro Numero: ";
+            label1.style.display = "block";
+            input1.type = "number";
+            input1.step = 1;
+            input1.pattern="^-?[0-9]+$"
+            input1.style.display = "block";
+
+            label2.textContent = "Segundo Numero: ";
+            label2.style.display = "block";
+            input2.type = "number";
+            input2.step = 1;
+            input2.pattern="^-?[0-9]+$"
+            input2.style.display = "block";
             break;
         case "op5":
+            label1.textContent = "Primeiro Numero: ";
+            label1.style.display = "block";
+            input1.type = "number";
+            input1.step = 1;
+            input1.pattern="^-?[0-9]+$"
+            input1.style.display = "block";
+            
+            label2.textContent = "Segundo Numero: ";
+            label2.style.display = "block";
+            input2.type = "number";
+            input2.step = 1;
+            input2.pattern="^-?[0-9]+$"
+            input2.style.display = "block";
+            
+            label3.textContent = "Terceiro Numero: ";
+            label3.style.display = "block";
+            input3.type = "number";
+            input3.step = 1;
+            input3.pattern="^-?[0-9]+$"
+            input3.style.display = "block";
             break;
         case "op6":
+            label1.style.display = "block";
+            input1.style.display = "block";
+            
+            label2.style.display = "block";
+            input2.style.display = "block";
+            
+            label3.style.display = "block";
+            input3.style.display = "block";
             break;
         case "op7":
+            label1.style.display = "block";
+            input1.style.display = "block";
             break;
         case "op8":
+            label1.style.display = "block";
+            input1.style.display = "block";
             break;
         case "op9":
             break;
         case "op10":
+            label1.style.display = "block";
+            input1.style.display = "block";
             break;
         case "op11":
             break;
         case "op12":
+            label1.style.display = "block";
+            input1.style.display = "block";
+            
+            label2.style.display = "block";
+            input2.style.display = "block";
+            
+            label3.style.display = "block";
+            input3.style.display = "block";
             break;
         case "op13":
+            label1.style.display = "block";
+            input1.style.display = "block";
+            label2.style.display = "block";
+            input2.style.display = "block";
+            label3.style.display = "block";
+            input3.style.display = "block";
             break;
         case "op14":
+            label1.style.display = "block";
+            input1.style.display = "block";
             break;
         case "op15":
+            label1.style.display = "block";
+            input1.style.display = "block";
             break;
         case "op16":
+            label1.style.display = "block";
+            input1.style.display = "block";
             break;
         case "op17":
+            label1.style.display = "block";
+            input1.style.display = "block";
             break;
         case "op18":
+            label1.style.display = "block";
+            input1.style.display = "block";
             break;
         case "op19":
+            label1.style.display = "block";
+            input1.style.display = "block";
             break;
         case "op20":
+            label1.style.display = "block";
+            input1.style.display = "block";
+            label2.style.display = "block";
+            input2.style.display = "block";
+            label3.style.display = "block";
+            input3.style.display = "block";
             break;
         case "op21":
+            label1.style.display = "block";
+            input1.style.display = "block";
+            label2.style.display = "block";
+            input2.style.display = "block";
+            label3.style.display = "block";
+            input3.style.display = "block";
+            label4.style.display = "block";
+            input4.style.display = "block";
+            label5.style.display = "block";
+            input5.style.display = "block";
             break;
         case "op22":
+            label1.style.display = "block";
+            input1.style.display = "block";
+            label2.style.display = "block";
+            input2.style.display = "block";
             break;
         case "op23":
+            label1.style.display = "block";
+            input1.style.display = "block";
+            label2.style.display = "block";
+            input2.style.display = "block";
             break;
         case "op24":
+            label1.style.display = "block";
+            input1.style.display = "block";
+            label2.style.display = "block";
+            input2.style.display = "block";
+            label3.style.display = "block";
+            input3.style.display = "block";
             break;
         default:
             console.log("Nenhum selecionado!")
     }
 }
 
+
+
 function form(opcaoSelecionada) {
     const form = document.getElementById("formulario");
+
+    
     if (opcaoSelecionada === "") {
         form.style.display = "none";
     } else {
@@ -240,6 +423,8 @@ function main() {
     form(opcoes.value)
 }
 
-function processar() {
+function processar(event) {
+    event.preventDefault();
     const opcoes = document.getElementById("opcoes");
+    console.log(opcoes)
 }

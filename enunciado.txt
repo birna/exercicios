@@ -79,7 +79,7 @@ triângulo, se o mesmo é: equilátero, isósceles ou escaleno.
 
 
 13. Faça um script que calcule as raízes de uma equação do segundo grau, na forma ax² + bx + c. O script deverá pedir os valores de a, b e c e fazer os testes necessários.
-4 Input
+3 Input
 
 14. Faça um script que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto.
 1 Input
@@ -115,7 +115,7 @@ notas existentes na máquina.
     par ou ímpar;
     positivo ou negativo;
     inteiro ou decimal.
-2 Input
+3 Input
 
 
 21. Faça um script que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
