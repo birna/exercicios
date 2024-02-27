@@ -173,6 +173,7 @@ function inputGenerate(opcaoSelecionada) {
     label1.textContent = "";
     input1.style.display = "none";
     input1.value = "";
+    input1.placeholder = "";
     input1.classList.remove("input-uppercase")
 
     const label2 = document.getElementById("label2");
@@ -181,6 +182,7 @@ function inputGenerate(opcaoSelecionada) {
     label2.textContent = "";
     input2.style.display = "none";
     input2.value = "";
+    input2.placeholder = "";
     input2.classList.remove("input-uppercase")
 
     const label3 = document.getElementById("label3");
@@ -189,6 +191,7 @@ function inputGenerate(opcaoSelecionada) {
     label3.textContent = "";
     input3.style.display = "none";
     input3.value = "";
+    input3.placeholder = "";
     input3.classList.remove("input-uppercase")
 
     const label4 = document.getElementById("label4");
@@ -197,6 +200,7 @@ function inputGenerate(opcaoSelecionada) {
     label4.textContent = "";
     input4.style.display = "none";
     input4.value = "";
+    input4.placeholder = "";
     input4.classList.remove("input-uppercase")
 
     const label5 = document.getElementById("label5");
@@ -205,6 +209,7 @@ function inputGenerate(opcaoSelecionada) {
     label5.textContent = "";
     input5.style.display = "none";
     input5.value = "";
+    input5.placeholder = "";
     input5.classList.remove("input-uppercase")
 
     switch (opcaoSelecionada) {
@@ -626,8 +631,6 @@ function main() {
 function processar(event) {
     event.preventDefault();
     const opcoes = document.getElementById("opcoes");
-    console.log(opcoes)
-
     const input1 = document.getElementById("input1");
     const input2 = document.getElementById("input2");
     const input3 = document.getElementById("input3");
@@ -635,9 +638,9 @@ function processar(event) {
     const input5 = document.getElementById("input5");
 
 
-    switch (opcaoSelecionada) {
+    switch (opcoes.value) {
         case "op1":
-            input1           
+            vogalconsoante(input1.value);
 
 
             break;
