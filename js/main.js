@@ -173,6 +173,7 @@ function inputGenerate(opcaoSelecionada) {
     label1.textContent = "";
     input1.style.display = "none";
     input1.value = "";
+    input1.classList.remove("input-uppercase")
 
     const label2 = document.getElementById("label2");
     const input2 = document.getElementById("input2");
@@ -180,6 +181,7 @@ function inputGenerate(opcaoSelecionada) {
     label2.textContent = "";
     input2.style.display = "none";
     input2.value = "";
+    input2.classList.remove("input-uppercase")
 
     const label3 = document.getElementById("label3");
     const input3 = document.getElementById("input3");
@@ -187,6 +189,7 @@ function inputGenerate(opcaoSelecionada) {
     label3.textContent = "";
     input3.style.display = "none";
     input3.value = "";
+    input3.classList.remove("input-uppercase")
 
     const label4 = document.getElementById("label4");
     const input4 = document.getElementById("input4");
@@ -194,6 +197,7 @@ function inputGenerate(opcaoSelecionada) {
     label4.textContent = "";
     input4.style.display = "none";
     input4.value = "";
+    input4.classList.remove("input-uppercase")
 
     const label5 = document.getElementById("label5");
     const input5 = document.getElementById("input5");
@@ -201,15 +205,16 @@ function inputGenerate(opcaoSelecionada) {
     label5.textContent = "";
     input5.style.display = "none";
     input5.value = "";
+    input5.classList.remove("input-uppercase")
 
     switch (opcaoSelecionada) {
         case "op1":
             label1.textContent = "Digite uma letra:"
-            label1.style.display = "block";    
-            
+            label1.style.display = "block";
             input1.maxLength = 1;
-            input1.type = "text"
+            input1.type = "text";
             input1.style.display = "block";
+            input1.classList.add("input-uppercase");
 
             break;
         case "op2":
@@ -321,11 +326,12 @@ function inputGenerate(opcaoSelecionada) {
             input1.maxLength = 1;
             input1.type = "text"
             input1.style.display = "block";
+            input1.classList.add("input-uppercase");
             
             break;
         case "op8":
             label1.textContent = "Salario (R$):"
-            label1.style.display = "block";            
+            label1.style.display = "block";
             input1.type = "number";
             input1.min = 0;
             input1.step = 0.01;
@@ -443,62 +449,153 @@ function inputGenerate(opcaoSelecionada) {
             label1.textContent = "Numero:";
             label1.style.display = "block";
             input1.type = "number";
-            input3.pattern="^-?[0-9]+$"
+            input1.pattern="^-?[0-9]+$"
             input1.step = 1;
             input1.style.display = "block";
             
             break;
         case "op17":
+            label1.textContent = "Numero:";
             label1.style.display = "block";
+            input1.type = "number";
+            input1.max = 1000;
+            input1.min = 0;
+            input1.step = 1;
             input1.style.display = "block";
+
             break;
         case "op18":
+            label1.textContent = "Valor Saque (R$):";
             label1.style.display = "block";
+            input1.type = "number";
+            input1.max = 600;
+            input1.min = 0;
+            input1.step = 0.01;
             input1.style.display = "block";
+
             break;
         case "op19":
+            label1.textContent = "Numero:";
             label1.style.display = "block";
+            input1.type = "number";
+            input1.pattern="^-?[0-9]+$"
+            input1.step = 0.01;
             input1.style.display = "block";
+
             break;
         case "op20":
+            label1.textContent = "Primeiro Numero:";
             label1.style.display = "block";
+            input1.type = "number";
+            input1.step = 0.01;
+            input1.pattern="^-?[0-9]+$"
             input1.style.display = "block";
+            
+            label2.textContent = "Segundo Numero:";
             label2.style.display = "block";
+            input2.type = "number";
+            input2.step = 0.01;
+            input2.pattern="^-?[0-9]+$"
             input2.style.display = "block";
+            
+            label3.textContent = "Operacao +soma, -subtrair, *multiplicar ou /dividir: ";
             label3.style.display = "block";
+            input3.type = "text";
+            input3.maxLength = 1;
             input3.style.display = "block";
+
             break;
         case "op21":
+            label1.textContent = "Telefonou para a vítima? (S/N):"
             label1.style.display = "block";
+            input1.type = "text";
+            input1.maxLength = 1;
             input1.style.display = "block";
+            input1.classList.add("input-uppercase");
+            
+            label2.textContent = "Esteve no local do crime? (S/N):"
             label2.style.display = "block";
+            input2.type = "text";
+            input2.maxLength = 1;
             input2.style.display = "block";
+            input2.classList.add("input-uppercase");
+            
+            label3.textContent = "Mora perto da vítima? (S/N):"
             label3.style.display = "block";
+            input3.type = "text";
+            input3.maxLength = 1;
             input3.style.display = "block";
+            input3.classList.add("input-uppercase");
+            
+            label4.textContent = "Devia para a vítima? (S/N):"
             label4.style.display = "block";
+            input4.type = "text";
+            input4.maxLength = 1;
             input4.style.display = "block";
+            input4.classList.add("input-uppercase");
+            
+            label5.textContent = "Já trabalhou com a vítima? (S/N):"
             label5.style.display = "block";
+            input5.type = "text";
+            input5.maxLength = 1;
             input5.style.display = "block";
+            input5.classList.add("input-uppercase");
+            
             break;
         case "op22":
+            label1.textContent = "Digite  A=Álcool ou G=Gasolina:"
             label1.style.display = "block";
+            input1.type = "text";
+            input1.maxLength = 1;
             input1.style.display = "block";
+            input1.classList.add("input-uppercase");
+
+            label2.textContent = "Quantidade de Combustivel (L):";
             label2.style.display = "block";
+            input2.type = "number";
+            input2.min = 0.00;
+            input2.step = 0.001;
             input2.style.display = "block";
+
             break;
         case "op23":
+            label1.textContent = "Quantidade de Morango (Kg):";
             label1.style.display = "block";
+            input1.type = "number";
+            input1.min = 0.000;
+            input1.step = 0.001;
             input1.style.display = "block";
+
+            label2.textContent = "Quantidade de Maçã (Kg):";
             label2.style.display = "block";
+            input2.type = "number";
+            input2.min = 0.000;
+            input2.step = 0.001;
             input2.style.display = "block";
+
             break;
         case "op24":
+            label1.textContent = "Digite  F=File Duplo, A=Alcatra ou P=Picanha:";
             label1.style.display = "block";
+            input1.type = "text";
+            input1.maxLength = 1;
             input1.style.display = "block";
+            input1.classList.add("input-uppercase");
+
+            label2.textContent = "Quantidade (Kg):";
             label2.style.display = "block";
+            input2.type = "number";
+            input2.min = 0.000;
+            input2.step = 0.001;
             input2.style.display = "block";
+
+            label3.textContent = "Digite T=Tabajara, D=Dinheiro ou C=Credito:";
             label3.style.display = "block";
+            input3.type = "text";
+            input3.maxLength = 1;
             input3.style.display = "block";
+            input3.classList.add("input-uppercase");
+            
             break;
         default:
             console.log("Nenhum selecionado!")
@@ -509,7 +606,6 @@ function inputGenerate(opcaoSelecionada) {
 
 function form(opcaoSelecionada) {
     const form = document.getElementById("formulario");
-
     
     if (opcaoSelecionada === "") {
         form.style.display = "none";
@@ -531,4 +627,138 @@ function processar(event) {
     event.preventDefault();
     const opcoes = document.getElementById("opcoes");
     console.log(opcoes)
+
+    const input1 = document.getElementById("input1");
+    const input2 = document.getElementById("input2");
+    const input3 = document.getElementById("input3");
+    const input4 = document.getElementById("input4");
+    const input5 = document.getElementById("input5");
+
+
+    switch (opcaoSelecionada) {
+        case "op1":
+            input1           
+
+
+            break;
+        // case "op2":
+        //     input1           
+        //     input1
+            
+        //     break;
+        // case "op3":
+        //     input1           
+        //     input1
+        //     input1
+            
+        //     break;
+        // case "op4":
+        //     input1           
+        //     input1
+            
+        //     break;
+        // case "op5":
+        //     input1           
+        //     input1
+        //     input1
+            
+        //     break;
+        // case "op6":
+        //     input1           
+        //     input1
+        //     input1
+            
+        //     break;
+        // case "op7":
+        //     input1           
+            
+        //     break;
+        // case "op8":
+        //     input1           
+
+        //     break;
+        // case "op9":
+        //     input1           
+        //     input1
+
+        //     break;
+        // case "op10":
+        //     input1           
+
+        //     break;
+        // case "op11":
+        //     input1           
+        //     input1
+
+        //     break;
+        // case "op12":
+        //     input1           
+        //     input1
+        //     input1
+            
+        //     break;
+        // case "op13":
+        //     input1           
+        //     input1
+        //     input1
+
+        //     break;
+        // case "op14":
+        //     input1
+
+        //     break;
+        // case "op15":
+        //     input1
+
+        //     break;
+        // case "op16":
+        //     input1
+            
+        //     break;
+        // case "op17":
+        //     input1
+
+        //     break;
+        // case "op18":
+        //     input1
+
+        //     break;
+        // case "op19":
+        //     input1
+
+        //     break;
+        // case "op20":
+        //     input1
+        //     input1
+        //     input1
+
+        //     break;
+        // case "op21":
+        //     input1
+        //     input2
+        //     input2
+        //     input2
+        //     input2
+
+        //     break;
+        // case "op22":
+        //     input1
+        //     input2
+
+        //     break;
+        // case "op23":
+        //     input1
+        //     input2
+
+        //     break;
+        // case "op24":
+        //     input1
+        //     input2
+        //     input3
+
+        //     break;
+        default:
+            console.log("Erro para Calcular, nenhuma opcao valida!")
+    }
+
 }

@@ -57,3 +57,7 @@ p {
 #opcoes:hover {
     border-color: #999;
 }
+
+.input-uppercase {
+    text-transform: uppercase;
+}
