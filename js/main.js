@@ -210,7 +210,7 @@ function inputGenerate(opcaoSelecionada) {
             input1.maxLength = 1;
             input1.type = "text"
             input1.style.display = "block";
-            
+
             break;
         case "op2":
             label1.textContent = "Nota 1:"
@@ -228,121 +228,225 @@ function inputGenerate(opcaoSelecionada) {
             input2.max = 10;
             input2.step = 0.25;
             input2.style.display = "block";
+            
             break;
         case "op3":
-            label1.textContent = "Primeiro Numero: ";
+            label1.textContent = "Primeiro Numero:";
             label1.style.display = "block";
             input1.type = "number";
             input1.step = 1;
             input1.pattern="^-?[0-9]+$"
             input1.style.display = "block";
             
-            label2.textContent = "Segundo Numero: ";
+            label2.textContent = "Segundo Numero:";
             label2.style.display = "block";
             input2.type = "number";
             input2.step = 1;
             input2.pattern="^-?[0-9]+$"
             input2.style.display = "block";
             
-            label3.textContent = "Terceiro Numero: ";
+            label3.textContent = "Terceiro Numero:";
             label3.style.display = "block";
             input3.type = "number";
             input3.step = 1;
             input3.pattern="^-?[0-9]+$"
             input3.style.display = "block";
+            
             break;
         case "op4":
-            label1.textContent = "Primeiro Numero: ";
+            label1.textContent = "Primeiro Numero:";
             label1.style.display = "block";
             input1.type = "number";
             input1.step = 1;
             input1.pattern="^-?[0-9]+$"
             input1.style.display = "block";
 
-            label2.textContent = "Segundo Numero: ";
+            label2.textContent = "Segundo Numero:";
             label2.style.display = "block";
             input2.type = "number";
             input2.step = 1;
             input2.pattern="^-?[0-9]+$"
             input2.style.display = "block";
+            
             break;
         case "op5":
-            label1.textContent = "Primeiro Numero: ";
+            label1.textContent = "Primeiro Numero:";
             label1.style.display = "block";
             input1.type = "number";
             input1.step = 1;
             input1.pattern="^-?[0-9]+$"
             input1.style.display = "block";
             
-            label2.textContent = "Segundo Numero: ";
+            label2.textContent = "Segundo Numero:";
             label2.style.display = "block";
             input2.type = "number";
             input2.step = 1;
             input2.pattern="^-?[0-9]+$"
             input2.style.display = "block";
             
-            label3.textContent = "Terceiro Numero: ";
+            label3.textContent = "Terceiro Numero:";
             label3.style.display = "block";
             input3.type = "number";
             input3.step = 1;
             input3.pattern="^-?[0-9]+$"
             input3.style.display = "block";
+            
             break;
         case "op6":
+            label1.textContent = "Primeiro Numero:";
             label1.style.display = "block";
+            input1.type = "number";
+            input1.step = 0.01;
+            input1.pattern="^-?[0-9]+$"
             input1.style.display = "block";
             
+            label2.textContent = "Segundo Numero:";
             label2.style.display = "block";
+            input2.type = "number";
+            input2.step = 0.01;
+            input2.pattern="^-?[0-9]+$"
             input2.style.display = "block";
             
+            label3.textContent = "Terceiro Numero:";
             label3.style.display = "block";
+            input3.type = "number";
+            input3.step = 0.01;
+            input3.pattern="^-?[0-9]+$"
             input3.style.display = "block";
+            
             break;
         case "op7":
+            label1.textContent = "Digite M=Matutino, V=Vespertino ou N=Noturno"
             label1.style.display = "block";
+            input1.maxLength = 1;
+            input1.type = "text"
             input1.style.display = "block";
+            
             break;
         case "op8":
-            label1.style.display = "block";
+            label1.textContent = "Salario (R$):"
+            label1.style.display = "block";            
+            input1.type = "number";
+            input1.min = 0;
+            input1.step = 0.01;
             input1.style.display = "block";
+
             break;
         case "op9":
+            label1.textContent = "Valor Hora (R$):";
+            label1.style.display = "block";
+            input1.type = "number";
+            input1.min = 0;
+            input1.step = 0.01;
+            input1.style.display = "block";
+
+            label2.textContent = "Horas trabalhadas no Mes:";
+            label2.style.display = "block";
+            input2.type = "number";
+            input2.min = 0;
+            input2.step = 0.5;
+            input2.style.display = "block";
+
             break;
         case "op10":
+            label1.textContent = "Dia da semana 1 ate 7:";
             label1.style.display = "block";
+            input1.type = "number";
+            input1.min = 1;
+            input1.max = 7;
+            input1.step = 1;
             input1.style.display = "block";
+
             break;
         case "op11":
+            label1.textContent = "Nota 1:"
+            label1.style.display = "block";
+            input1.type = "number";
+            input1.min = 0;
+            input1.max = 10;
+            input1.step = 0.25;
+            input1.style.display = "block";
+            
+            label2.textContent = "Nota 2:"
+            label2.style.display = "block";
+            input2.type = "number";
+            input2.min = 0;
+            input2.max = 10;
+            input2.step = 0.25;
+            input2.style.display = "block";
+
             break;
         case "op12":
+            label1.textContent = "Triangulo Lado 1 (cm):";
             label1.style.display = "block";
+            input1.type = "number";
+            input1.min = 0.1;
+            input1.step = 0.1;
             input1.style.display = "block";
             
+            label2.textContent = "Triangulo Lado 2 (cm):";
             label2.style.display = "block";
+            input2.type = "number";
+            input2.min = 0.1;
+            input2.step = 0.1;
             input2.style.display = "block";
             
+            label3.textContent = "Triangulo Lado 3 (cm):";
             label3.style.display = "block";
+            input3.type = "number";
+            input3.min = 0.1;
+            input3.step = 0.1;
             input3.style.display = "block";
+            
             break;
         case "op13":
+            label1.textContent = "a:";
             label1.style.display = "block";
+            input1.type = "number";
+            input1.step = 0.0001;
+            input1.pattern="^-?[0-9]+$"
             input1.style.display = "block";
+            
+            label2.textContent = "b:";
             label2.style.display = "block";
+            input2.type = "number";
+            input2.step = 0.0001;
+            input2.pattern="^-?[0-9]+$"
             input2.style.display = "block";
+            
+            label3.textContent = "c:";
             label3.style.display = "block";
+            input3.type = "number";
+            input3.step = 0.0001;
+            input3.pattern="^-?[0-9]+$"
             input3.style.display = "block";
+
             break;
         case "op14":
+            label1.textContent = "Ano:";
             label1.style.display = "block";
+            input1.type = "number";
+            input1.min = 0;
+            input1.step = 1;
             input1.style.display = "block";
+
             break;
         case "op15":
+            label1.textContent = "Data:";
             label1.style.display = "block";
+            input1.type = "text";
+            input1.placeholder="dd/mm/aaaa"
             input1.style.display = "block";
+
             break;
         case "op16":
+            label1.textContent = "Numero:";
             label1.style.display = "block";
+            input1.type = "number";
+            input3.pattern="^-?[0-9]+$"
+            input1.step = 1;
             input1.style.display = "block";
+            
             break;
         case "op17":
             label1.style.display = "block";
