@@ -165,6 +165,63 @@ function alteraEnunciado(opcaoSelecionada) {
     return enunciado;
 }
 
+function inputGenerate(opcaoSelecionada) {
+
+
+    switch (opcaoSelecionada) {
+        case "op1":
+            break;
+        case "op2":
+            break;
+        case "op3":
+            break;
+        case "op4":
+            break;
+        case "op5":
+            break;
+        case "op6":
+            break;
+        case "op7":
+            break;
+        case "op8":
+            break;
+        case "op9":
+            break;
+        case "op10":
+            break;
+        case "op11":
+            break;
+        case "op12":
+            break;
+        case "op13":
+            break;
+        case "op14":
+            break;
+        case "op15":
+            break;
+        case "op16":
+            break;
+        case "op17":
+            break;
+        case "op18":
+            break;
+        case "op19":
+            break;
+        case "op20":
+            break;
+        case "op21":
+            break;
+        case "op22":
+            break;
+        case "op23":
+            break;
+        case "op24":
+            break;
+        default:
+            console.log("Nenhum selecionado!")
+    }
+}
+
 function form(opcaoSelecionada) {
     const form = document.getElementById("formulario");
     if (opcaoSelecionada === "") {
@@ -172,12 +229,17 @@ function form(opcaoSelecionada) {
     } else {
         form.style.display = "block";
     }
-}
 
+    inputGenerate(opcaoSelecionada)
+}
 
 function main() {
     const conteudo = document.getElementById("enunciado");
     const opcoes = document.getElementById("opcoes");
     conteudo.innerHTML = alteraEnunciado(opcoes.value);
     form(opcoes.value)
+}
+
+function processar() {
+    const opcoes = document.getElementById("opcoes");
 }
