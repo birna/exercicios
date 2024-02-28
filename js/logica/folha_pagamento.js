@@ -1,4 +1,4 @@
-function combustivel(valor1, valor2) {
+function folhaPagamento(valor1, valor2) {
     var log = 
     `
         Entrada_Valor1: ${valor1},
