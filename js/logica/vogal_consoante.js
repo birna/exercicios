@@ -13,7 +13,7 @@ function vogalconsoante(valor1) {
     }
 
     if (vogalE === valor1) {
-        return resultado(vogal, null, "TesteInformacao");
+        return resultado(vogal, null, null);
     }
     
     if (vogalI === valor1) {

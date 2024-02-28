@@ -666,125 +666,121 @@ function processar(event) {
     switch (opcoes.value) {
         case "op1":
             vogalconsoante(input1.value);
-
+            break;
+        case "op2":
+            mediaAluno(input1.value, input2.value);
+            break;
+        case "op3":
+            input1
+            input2
+            input3
+            
+            break;
+        case "op4":
+            input1
+            input2
+            
+            break;
+        case "op5":
+            input1
+            input2
+            input3
+            
+            break;
+        case "op6":
+            input1
+            input2
+            input3
+            
+            break;
+        case "op7":
+            input1
+            
+            break;
+        case "op8":
+            input1
 
             break;
-        // case "op2":
-        //     input1           
-        //     input1
+        case "op9":
+            input1
+            input2
+
+            break;
+        case "op10":
+            input1
+
+            break;
+        case "op11":
+            input1
+            input2
+
+            break;
+        case "op12":
+            input1
+            input2
+            input3
             
-        //     break;
-        // case "op3":
-        //     input1           
-        //     input1
-        //     input1
+            break;
+        case "op13":
+            input1
+            input2
+            input3
+
+            break;
+        case "op14":
+            // input1
+
+            break;
+        case "op15":
+            // input1
+
+            break;
+        case "op16":
+            // input1
             
-        //     break;
-        // case "op4":
-        //     input1           
-        //     input1
-            
-        //     break;
-        // case "op5":
-        //     input1           
-        //     input1
-        //     input1
-            
-        //     break;
-        // case "op6":
-        //     input1           
-        //     input1
-        //     input1
-            
-        //     break;
-        // case "op7":
-        //     input1           
-            
-        //     break;
-        // case "op8":
-        //     input1           
+            break;
+        case "op17":
+            // input1
 
-        //     break;
-        // case "op9":
-        //     input1           
-        //     input1
+            break;
+        case "op18":
+            // input1
 
-        //     break;
-        // case "op10":
-        //     input1           
+            break;
+        case "op19":
+            // input1
 
-        //     break;
-        // case "op11":
-        //     input1           
-        //     input1
+            break;
+        case "op20":
+            // input1
+            // input2
+            // input3
 
-        //     break;
-        // case "op12":
-        //     input1           
-        //     input1
-        //     input1
-            
-        //     break;
-        // case "op13":
-        //     input1           
-        //     input1
-        //     input1
+            break;
+        case "op21":
+            // input1
+            // input2
+            // input3
+            // input4
+            // input5
 
-        //     break;
-        // case "op14":
-        //     input1
+            break;
+        case "op22":
+            // input1
+            // input2
 
-        //     break;
-        // case "op15":
-        //     input1
+            break;
+        case "op23":
+            // input1
+            // input2
 
-        //     break;
-        // case "op16":
-        //     input1
-            
-        //     break;
-        // case "op17":
-        //     input1
-
-        //     break;
-        // case "op18":
-        //     input1
-
-        //     break;
-        // case "op19":
-        //     input1
-
-        //     break;
-        // case "op20":
-        //     input1
-        //     input1
-        //     input1
-
-        //     break;
-        // case "op21":
-        //     input1
-        //     input2
-        //     input2
-        //     input2
-        //     input2
-
-        //     break;
-        // case "op22":
-        //     input1
-        //     input2
-
-        //     break;
-        // case "op23":
-        //     input1
-        //     input2
-
-        //     break;
-        // case "op24":
-        //     input1
-        //     input2
-        //     input3
-
-        //     break;
+            break;
+        case "op24":
+            // input1
+            // input2
+            // input3
+        
+            break;
         default:
             console.log("Erro para Calcular, nenhuma opcao valida!")
     }
