@@ -607,8 +607,6 @@ function inputGenerate(opcaoSelecionada) {
     }
 }
 
-
-
 function form(opcaoSelecionada) {
     const form = document.getElementById("formulario");
     
@@ -627,6 +625,33 @@ function main() {
     conteudo.innerHTML = alteraEnunciado(opcoes.value);
     form(opcoes.value)
 }
+
+function resultado(sucesso, erro, informacao) {
+    const title = document.getElementById("textTitle");
+    const htmlDebug = document.getElementById("textDebug");
+    const htmlErro = document.getElementById("textErro")
+    const htmlResultado =  document.getElementById("textResultado")
+    
+    htmlErro.style.display = "none";
+    htmlDebug.style.display = "none";
+    htmlResultado.style.display = "none";
+    title.style.display = "none";
+
+    if (informacao) {
+        htmlDebug.style.display = "block";
+        htmlDebug.innerHTML = "DEBUG: " + informacao;
+    }
+
+    if (sucesso) {
+        title.style.display = "none";
+        htmlResultado.style.display = "block";
+        htmlResultado.innerHTML = sucesso
+    } else {
+        htmlErro.style.display = "block";
+        htmlErro.innerHTML = "ERRO: " + erro;
+    }
+}
+
 
 function processar(event) {
     event.preventDefault();

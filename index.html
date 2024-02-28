@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Exemplo Grupo de Inputs com CSS Agradável</title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/logica/vogal-consoante.js"></script>
+        <script src="js/logica/vogal_consoante.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
@@ -67,6 +67,17 @@
                 <br>
                 <button onclick="processar(event)" class="btn btn-primary">RESULTADO</button>
             </form>
+        </div>
+        
+        <div class="container">
+            <div>
+                <p id="textTitle" style="display: none;">RESULTADO: </p>
+                <p id="textResultado" class="sucesso" style="display: none;"></p>
+                <p id="textErro" class="erro" style="display: none;"></p>
+
+                
+                <p id="textDebug" class="informacao" style="display: none;"></p>
+            </div>
         </div>
     </body>
 </html>
