@@ -1,4 +1,4 @@
-function triangulo(valor1) {
+function turnoEstudante(valor1) {
     var log = 
     `
         Entrada_Valor1: ${valor1}

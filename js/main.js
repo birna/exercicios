@@ -619,23 +619,36 @@ function form(opcaoSelecionada) {
     inputGenerate(opcaoSelecionada)
 }
 
-function main() {
-    const conteudo = document.getElementById("enunciado");
-    const opcoes = document.getElementById("opcoes");
-    conteudo.innerHTML = alteraEnunciado(opcoes.value);
-    form(opcoes.value)
-}
-
-function resultado(sucesso, erro, informacao) {
+function clearResultado() {
     const title = document.getElementById("textTitle");
     const htmlDebug = document.getElementById("textDebug");
-    const htmlErro = document.getElementById("textErro")
-    const htmlResultado =  document.getElementById("textResultado")
+    const htmlErro = document.getElementById("textErro");
+    const htmlResultado =  document.getElementById("textResultado");
     
     htmlErro.style.display = "none";
     htmlDebug.style.display = "none";
     htmlResultado.style.display = "none";
     title.style.display = "none";
+    
+    title.innerHTML = ""
+    htmlDebug.innerHTML = ""
+    htmlErro.innerHTML= ""
+    htmlResultado.innerHTML= ""
+}
+
+function main() {
+    const conteudo = document.getElementById("enunciado");
+    const opcoes = document.getElementById("opcoes");
+    conteudo.innerHTML = alteraEnunciado(opcoes.value);
+    form(opcoes.value)
+    clearResultado()
+}
+
+function resultado(sucesso, erro, informacao) {
+    const title = document.getElementById("textTitle");
+    const htmlDebug = document.getElementById("textDebug");
+    const htmlErro = document.getElementById("textErro");
+    const htmlResultado =  document.getElementById("textResultado");
 
     if (informacao) {
         htmlDebug.style.display = "block";
@@ -671,115 +684,70 @@ function processar(event) {
             mediaAluno(input1.value, input2.value);
             break;
         case "op3":
-            input1
-            input2
-            input3
-            
+            maiorNumero(input1.value, input2.value, input3.value);
             break;
         case "op4":
-            input1
-            input2
-            
+            inverterValor(input1.value, input2.value);
             break;
         case "op5":
-            input1
-            input2
-            input3
-            
+            maiorMenor(input1.value, input2.value, input3.value);
             break;
         case "op6":
-            input1
-            input2
-            input3
-            
+            numeracaoDecrescente(input1.value, input2.value, input3.value);
             break;
         case "op7":
-            input1
-            
+            turnoEstudante(input1.value);
             break;
         case "op8":
-            input1
-
+            aumentoSalarial(input1.value);
             break;
         case "op9":
-            input1
-            input2
-
+            folhaPagamento(input1.value, input2.value);
             break;
         case "op10":
-            input1
-
+            diaSemana(input1.value);
             break;
         case "op11":
-            input1
-            input2
-
+            duasNotas(input1.value, input2.value);
             break;
         case "op12":
-            input1
-            input2
-            input3
-            
+            triangulo(input1.value, input2.value, input3.value);
             break;
         case "op13":
-            input1
-            input2
-            input3
-
+            equacaoSegundoGrau(input1.value, input2.value, input3.value);
             break;
         case "op14":
-            // input1
-
+            anoBissexto(input1.value);
             break;
         case "op15":
-            // input1
-
+            formatarData(input1.value);
             break;
         case "op16":
-            // input1
-            
+            parImpar(input1.value);
             break;
         case "op17":
-            // input1
-
+            quantidadeCentenas(input1.value);
             break;
         case "op18":
-            // input1
-
+            saqueNotas(input1.value);
             break;
         case "op19":
-            // input1
-
+            intDecimal(input1.value);
             break;
         case "op20":
-            // input1
-            // input2
-            // input3
-
+            operacao(input1.value, input2.value, input3.value);
             break;
         case "op21":
-            // input1
-            // input2
-            // input3
-            // input4
-            // input5
-
+            crime(input1.value, input2.value, input3.value,input4.value,input5.value);    
             break;
         case "op22":
-            // input1
-            // input2
-
+            combustivel(input1.value,input2.value);
             break;
         case "op23":
-            // input1
-            // input2
-
+            frutas(input1.value, input2.value);
             break;
         case "op24":
-            // input1
-            // input2
-            // input3
-        
+            carnes(input1.value, input2.value, input3.value);
             break;
         default:
             console.log("Erro para Calcular, nenhuma opcao valida!")
